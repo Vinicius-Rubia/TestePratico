@@ -1,0 +1,3 @@
+DECLARE @nasc Varchar(11) = '17/04/2008'
+
+SELECT DATEDIFF(YEAR, CONVERT(DATE, @nasc, 105), GETDATE()) as ano

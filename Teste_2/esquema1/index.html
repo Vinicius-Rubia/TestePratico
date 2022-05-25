@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Teste Prático</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+    <div class="alert alert-success alert-dismissible fade show d-none" id="alert" role="alert">
+        Dados gravados com sucesso. Inspecione a página e vá em "Application", no localStorage estará armazenado seus dados.
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+
+    <form id="formulario">
+        <div class="my-3 w-50 mx-auto">
+            <input type="file" class="form-control" id="arquivo" onChange="handleFile(this.files)">
+        </div>
+        <div class="my-3 w-50 mx-auto">
+            <label for="texto" class="form-label">Conteúdo do seu arquivo:</label>
+            <textarea class="form-control" id="texto" cols="30" rows="10"></textarea>
+        </div>
+        <div class="my-3 w-50 mx-auto text-center">
+            <input type="submit" class="btn btn-primary w-50" value="Gravar" id="gravar">
+        </div>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

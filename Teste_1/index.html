@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Teste Prático</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+    <section>
+        <form class="row g-3 d-flex justify-content-center mt-5" id="formulario">
+            <div class="col-md-6">
+                <label for="inputNumbers" class="form-label">Digite os números</label>
+                <input type="number" class="form-control" id="inputNumbers">
+            </div>
+            <div>
+                <div class="col d-flex justify-content-center">
+                    <input type="button" class="btn btn-primary mx-5" value="Adicionar número" id="add"></button>
+                    <input type="submit" class="btn btn-primary" value="Consultar em ordem Crescente" id="buttonSend"></button>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <section class="d-flex justify-content-center mt-4">
+        <div class="card mx-3">
+            <div class="card-header">
+                Números Adicionados:
+            </div>
+            <div class="card-body">
+                <p class="card-text" id="addNumbers"></p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                Em Ordem Crescente:
+            </div>
+            <div class="card-body">
+                <p class="card-text" id="orderNumbers"></p>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
